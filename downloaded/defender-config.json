@@ -1,0 +1,26 @@
+{
+  "sentinels": [
+    {
+      "type": "BLOCK",
+      "network": "bsc",
+      "confirmLevel": 1,
+      "paused": false,
+      "name": "BSC OffChainAggregator",
+      "addresses": [
+        "0xEC72d46011D67a6ac4Fa7D3f476FA2049Dc807eE"
+      ],
+      "abi": "./downloaded/BSC_OffChainAggregator_ABI.json",
+      "functionConditions": [
+        {
+          "functionSignature": "transmit(bytes,bytes32[],bytes32[],bytes32)"
+        }
+      ],
+      "eventConditions": [],
+      "txCondition": "status == 'failed'",
+      "alertTimeoutMs": 0,
+      "notificationChannels": []
+    }
+  ],
+  "autotasks": [],
+  "notificationChannels": []
+}
